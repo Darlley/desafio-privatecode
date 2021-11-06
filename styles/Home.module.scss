@@ -1,7 +1,142 @@
-.container {
-  padding: 0 2rem;
+@import 'partials/variables';
+
+.header{
+  height: 92vh;
+  background-color: $primaryColor;
+  display: flex;
+  flex-direction: column;
+  
+  .headerContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    
+      span:last-child {
+        margin-top: 1rem;
+        font-family: 'Inter', sans-serif;
+        color: $secundaryColor;
+        font-weight: 700;
+        font-size: 14px;
+      }
+    }
+
+    h1{
+      font-family: 'Fredoka One', sans-serif;
+      font-size: 3rem;
+      text-align: center;
+      margin: 2rem 0;
+
+      span {
+        color: $secundaryColor;
+      }
+    }
+
+    p{
+      font-size: 14px;
+      text-align: center;
+      padding: 0 3rem;
+    }
+
+    h1, p {
+      color: $lightColor;
+    }
+
+    .headerButtom{
+      display: inline-block;
+      margin-top: 6rem;
+      background-color: $secundaryColor;
+      padding: 1rem 5rem;
+      color: $primaryColor;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 16px;
+
+      i{
+        margin-left: 1rem;
+      }
+    }
+
+    .retangule{
+      display: none;
+    }
+  }
+  .ilustrations{
+    display: none;
+  }
 }
 
-@media (max-width: 600px) {
+@media (min-width: 800px) {
+  .header{
+    height: 94vh;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    z-index: 1;
 
+    background: $primaryColor url('../public/illustrations/bg-header.svg') no-repeat right;
+    
+    .headerContent{
+      padding: 3rem;
+      flex: 6;
+      justify-content: flex-start;
+      align-items: flex-start;
+      height: auto;
+
+      > div {
+        flex-direction: row;
+        justify-content: center;
+
+        span:last-child {
+          margin: 0 0 0 1rem;
+          font-size: 1rem;
+        }
+      }
+
+      h1{
+        font-size: 4rem;
+        text-align: left;
+  
+        span {
+          color: $secundaryColor;
+        }
+      }
+
+      p{
+        font-size: 20px;
+        text-align: left;
+        padding: 0;
+      }
+
+      .headerButtom{
+        margin-top: 1rem;
+      }
+
+      .retangule{
+        position: absolute;
+        top: 15%;
+        left: -10%;
+        z-index: -5;
+        display: block;
+        background-color: #292663d5;
+        min-width: 60%;
+        min-height: 65%;
+        border-radius: 124px;
+        transform: rotate(-25deg);
+      }
+    }
+
+    .ilustrations{
+      display: flex;
+      padding: 3rem;
+      flex: 6;
+    }
+  }
 }
