@@ -34,8 +34,8 @@ export default function Home() {
           </div>
           <h1>Você escolhe<br />o que aprender<span>.</span></h1>
           <p>
-            Aqui você terá toda assistência queprecisa com materiais
-            desenvolvido por <strong>mestres e doutores em matemática</strong>.
+            Aqui você terá toda assistência que precisa com materiais
+            desenvolvidos por <strong>mestres e doutores em matemática</strong>.
           </p>
           <Link href="#">
             <a className={styles.headerButtom}>

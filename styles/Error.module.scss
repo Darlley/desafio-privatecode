@@ -1,0 +1,29 @@
+@import 'partials/variables';
+
+.pageError{
+  
+  .errorContainer{
+    height: 94vh;
+    padding: 0 1rem;
+    background-color: $primaryColor;
+    color: $lightColor;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    a{
+      color: $secundaryColor;
+      text-decoration: none;
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .pageError{
+    .errorContainer{
+      align-items: flex-start;
+      padding: 0 3rem;
+    }
+  }
+}
