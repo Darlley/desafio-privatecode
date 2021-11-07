@@ -15,8 +15,10 @@ html, body{
 }
 
 a {
-  color: inherit;
   text-decoration: none;
+}
+p{
+  color: $gray200;
 }
 
 $theme-colors: (
@@ -30,6 +32,24 @@ $theme-colors: (
   &:hover{
     color: $primaryColor;
   }
+}
+
+.btnPrimary{
+  background-color: $primaryColor;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: white;
+  border-radius: 6px;
+
+  i{
+    margin-left: 1rem;
+  }
+
+  &:hover{
+    filter: brightness(0.9);
+    color: white;
+  }
+
 }
 
 @import "~bootstrap/scss/bootstrap";
