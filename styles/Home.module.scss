@@ -112,6 +112,39 @@
         display: none;
       }
     }
+
+    &:nth-child(2){
+      font-family: 'Nunito', sans-serif;
+      padding: 2rem;
+      background-color: $lightColor;
+      display: flex;
+      flex-direction: column;
+
+      .main_section_container{
+        text-align: center;
+
+        .section_container_image{
+          display: flex;
+          justify-content: center;
+        }
+
+        span {
+          font-weight: bold;
+          color: $blueColor;
+          font-size: 1.5rem;
+          text-transform: uppercase;
+        }
+        h3{
+          font-weight: bold;
+          color: $primaryColor;
+          font-size: 2rem;
+        }
+        p {
+          font-size: 20px;
+        }
+
+      }
+    }
   }
 }
 
@@ -217,6 +250,26 @@
         }
         .section_right{
           display: block;
+        }
+      }
+
+      &:nth-child(2){
+        flex-direction: row;
+        padding: 3rem;
+  
+        .main_section_container{
+          text-align: left;
+          
+          h3{
+            font-size: 3rem;
+            width: 80%;
+          }
+
+          &:nth-child(even){
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column-reverse;
+          }
         }
       }
     }

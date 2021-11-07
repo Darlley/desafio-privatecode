@@ -13,6 +13,9 @@ import mathCompass from '../public/icons/math-compass.svg'
 import workspace from '../public/icons/workspace.svg'
 import description from '../public/description.jpg'
 
+import ilustration45 from '../public/illustrations/image45.png'
+import ilustration43 from '../public/illustrations/image43.png'
+
 export default function Home() {
   return (
     <>
@@ -86,7 +89,30 @@ export default function Home() {
           </div>
         </section>
 
-        <section className={styles.main_section}></section>
+        <section className={styles.main_section}>
+          <div className={styles.main_section_container}>
+            <div className={styles.section_container_image}>
+              <Image src={ilustration45} width={450} height={450} />
+            </div>
+            <div>
+              <span>Quer ser aprovado?</span>
+              <h3>Se seu foco é ser aprovado, nós estamos aqui por você.</h3>
+              <p>Somos um cursinho online especialista em ensinar matemática. Temos os melhores professores mestres e doutores para tirar suas dúvidas e te ensinar matemática desde a teoria até a resolução de exercícios de todos os níveis.</p>
+            </div>
+          </div>
+
+          <div className={styles.main_section_container}>
+            <div className={styles.section_container_image}>
+              <Image src={ilustration45} width={450} height={450} />
+            </div>
+            <div>
+              <span>100% MATEMÁTICA</span>
+              <h3>Matemática para quem quer entrar na facul.</h3>
+              <p>Somos um cursinho online especialista em ensinar matemática. Temos os melhores professores mestres e doutores para tirar suas dúvidas e te ensinar matemática desde a teoria até a resolução de exercícios de todos os níveis.</p>
+            </div>
+          </div>
+
+        </section>
 
       </main>
 
