@@ -145,6 +145,256 @@
 
       }
     }
+
+    &:nth-child(3){
+      padding: 2rem;
+      flex-direction: column;
+      font-family: 'Nunito', sans-serif;
+
+      .main_section_card_title{
+        margin-bottom: 2rem;
+
+        span {
+          font-weight: bold;
+          color: $blueColor;
+          font-size: 1.5rem;
+          text-transform: uppercase;
+        }
+        h2{
+          font-weight: bold;
+          color: $primaryColor;
+          font-size: 3rem;
+        }
+      }
+
+      .section_card{
+        display: flex;
+        flex-direction: column;
+
+        .section_cardContainer{
+
+          padding: 6rem 2rem;
+          border-radius: 6px;
+
+          ul li{
+            list-style: none;
+            margin-left: -35px;
+
+            i{
+              margin-right: .5rem;
+            }
+          }
+          
+          &:nth-child(odd){
+            background-color: $primaryColor;
+            position: relative;
+            margin-bottom: 2rem;
+
+            .section_card_titleContainer{
+
+              .card_title{
+                span{
+                  color: #3C5882;
+                }
+                h3{
+                  color: white;
+                }
+              }
+              .section_card_starContainer{
+                position: absolute;
+                display: flex;
+                top: 3%;
+                right: 2%;
+                background: url('../public/illustrations/star.png') no-repeat;
+                background-size: contain;
+
+                transform: rotate(30deg);
+                
+                p{
+                  text-align: center;
+                  margin: 1rem 0;
+                  color: $primaryColor;
+                  padding: 1rem;
+                  font-size: 1rem;
+
+                  span{
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    padding: 0;
+                  }
+
+                }
+              }
+            }
+  
+            .section_cardContent{
+              span{                
+                color: $blueColor;
+              }
+              ul li{
+                color: $lightColor;
+              }
+            }
+  
+            .section_cardValues{
+              .cardValuesContainer{
+                .cardValuesContainerPosition{
+                  &:nth-child(1){
+                    div:nth-child(2){
+                      p {
+                        margin-bottom: 0;
+
+                        span{
+                          color: $lightColor;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          &:nth-child(even){
+            border: 1px solid #201e542e;
+
+            .section_card_titleContainer{
+
+              .card_title{
+                span{
+                  color: $primaryColor
+                }
+                h3{
+                  color: $primaryColor
+                }
+              }
+            }
+  
+            .section_cardContent{
+              span{                
+                color: $blueColor;
+              }
+              ul li{
+                color: $primaryColor;
+              }
+            }
+
+            .section_cardValues{
+              .cardValuesContainer{
+                .cardValuesContainerPosition{
+                  &:nth-child(1){
+                    div:nth-child(2){
+                      p {
+                        color: $primaryColor;
+                        span{
+                          color: $primaryColor;
+                          display: inline-block;
+                          padding-top: 3rem;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .section_card_titleContainer{
+            margin-bottom: 2rem;
+            
+            .card_title{
+              span{
+                font-size: 1.5rem;
+              }
+              h3{
+                font-size: 3rem;
+              }
+            }
+          }
+
+          .section_cardContent{
+            span{
+              color: $blueColor;
+              font-size: 1.5rem;
+            }
+            ul{
+              margin-top: 2rem;
+
+              li{
+                display: flex;
+              }
+            }
+          }
+
+          .section_cardValues{
+            display: flex;
+            flex-direction: column;
+            margin-top: 2rem;
+            
+            .cardValuesContainer{
+              flex: 2;
+              
+              &:nth-child(1){
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+              }
+              &:nth-child(2){
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .buttonCard{
+                  display: flex;
+                  justify-content: center;
+                  width: 100%;
+                  padding: 1rem;
+
+                  background-color: $secundaryColor;
+                  
+                  text-decoration: none;
+                  color: white;
+                  border-radius: 6px;
+  
+                  &:hover{
+                    filter: brightness(0.9);
+                    color: white;
+                  }
+                }
+              }
+
+              .cardValuesContainerPosition{
+                display: flex;
+
+                &:nth-child(1){
+
+                  div:nth-child(1){
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    
+                    span{
+                      color: $blueColor;
+                      font-size: 1.3rem;
+                      font-weight: bold;
+                    }
+                  }
+                  div:nth-child(2){
+                    flex-direction: column;
+                    align-items: center;
+
+                    p span{
+                      font-size: 2rem;
+                      font-weight: bold;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -218,7 +468,7 @@
       &:nth-child(1){
     
         .section_left{
-          padding: 3rem;
+          padding: 3rem 6rem;
           display: flex;
           justify-content: center;
 
@@ -255,7 +505,7 @@
 
       &:nth-child(2){
         flex-direction: row;
-        padding: 3rem;
+        padding: 3rem 6rem;
   
         .main_section_container{
           text-align: left;
@@ -269,6 +519,37 @@
             margin-top: 1rem;
             display: flex;
             flex-direction: column-reverse;
+          }
+        }
+      }
+
+      &:nth-child(3){
+        padding: 3rem 6rem;
+
+        .section_card{
+          flex-direction: row;
+          gap: 3rem;
+  
+          .section_cardContainer{
+            flex: 1;
+
+            &:nth-child(odd){
+              margin-bottom: 0;
+            }
+
+            .section_cardValues{
+              flex-direction: row;
+
+              .cardValuesContainer{
+
+                &:nth-child(2){
+  
+                  .buttonCard{
+                    padding: 1rem 3rem;
+                  }
+                }
+              }
+            }
           }
         }
       }
