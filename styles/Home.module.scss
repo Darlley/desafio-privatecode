@@ -72,7 +72,32 @@
     display: none;
   }
 }
+
+.sectionParceiros{
+  overflow: hidden;
+
+  .parceirosImageContainer {
+    display: none;
+  }
+  .parceirosImageBg{
+    height: 166px;
+    width: 1270px;
+    background-image: url('../public/parceiros.png');
+    animation: animar 20s linear infinite alternate-reverse;
+    
+    @keyframes animar{
+      from{
+          transform: translateX(-90%) translateY(0);
+      }
+      to {
+          transform: translateX(10%) translateY(0);
+      }
+    }
+  }
+}
+
 .main{
+
   .main_section{
     display: flex;
     
@@ -461,6 +486,16 @@
       display: flex;
       padding: 3rem;
       flex: 6;
+    }
+  }
+  .sectionParceiros{
+    .parceirosImageContainer {
+      display: flex;
+      justify-content: center;
+      animation: none;
+    }
+    .parceirosImageBg{
+      display: none;
     }
   }
   .main{

@@ -16,6 +16,8 @@ import description from '../public/description.jpg'
 import ilustration45 from '../public/illustrations/image45.png'
 import ilustration43 from '../public/illustrations/image43.png'
 
+import parceiros from '../public/parceiros.png'
+
 export default function Home() {
   return (
     <>
@@ -48,6 +50,13 @@ export default function Home() {
           <Image src={ilustrationHome} width={656} height={586} />
         </div>
       </header>
+
+      <div className={styles.sectionParceiros}>
+        <div className={styles.parceirosImageContainer}>
+          <Image src={parceiros} width={1270} heigth={168} />
+        </div>
+        <div className={styles.parceirosImageBg}></div>
+      </div>
 
       <main className={styles.main}>
         <section className={styles.main_section}>
