@@ -12,11 +12,10 @@ import mathRoot from '../public/icons/math-root.svg'
 import mathCompass from '../public/icons/math-compass.svg'
 import workspace from '../public/icons/workspace.svg'
 import description from '../public/description.jpg'
-
 import ilustration45 from '../public/illustrations/image45.png'
 import ilustration43 from '../public/illustrations/image43.png'
-
 import parceiros from '../public/parceiros.png'
+import phoneBg from '../public/illustrations/Phone.png'
 
 export default function Home() {
   return (
@@ -280,7 +279,40 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <section className={styles.main_section}>
+          <div className={styles.sectionSliderTitle}>
+            <span>Depoimentos</span>
+            <h2>Recomentado por quem é expert no assunto</h2>
+          </div>
+          <div>slider</div>
+        </section>
       </main>
+
+      <section className={styles.sectionCta}>
+        <div className={styles.sectionCtaContainer}>
+          <div className={styles.ImageBg}>
+            <Image src={phoneBg} width={538} height={756} />
+          </div>
+        </div>
+        <div className={styles.sectionCtaContainer}>
+          <div>
+            <Image src={robot} width={51} height={37} />
+            <span>Baixe aulas no app e estude offline</span>
+          </div>
+          <div>
+            <p>
+              Receva lemebretes no seu celular e tenha a facilidade de estudar a qualquer hora e de qualquer lugar. <strong>Baixe nosso app e confira.</strong>
+            </p>
+          </div>
+          <div className={styles.ctaButtomContainer}>
+            <Link href="#"><a className={styles.ctaButtom}>
+              Conheça nosso aplicativo
+              <i className="bi bi-arrow-right"></i>
+            </a></Link>
+          </div>
+        </div>
+      </section>
 
       <footer></footer>
     </>

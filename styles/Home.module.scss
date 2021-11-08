@@ -420,6 +420,93 @@
         }
       }
     }
+
+    // slider
+    &:nth-child(4){
+      padding: 2rem;
+      flex-direction: column;
+
+      .sectionSliderTitle{
+        max-width: 100%;
+        margin-bottom: 2rem;
+
+        span {
+          font-weight: bold;
+          color: $blueColor;
+          font-size: 1.5rem;
+          text-transform: uppercase;
+        }
+        h2{
+          font-weight: bold;
+          color: $primaryColor;
+          font-size: 3rem;
+        }
+      }
+
+    }
+  }
+}
+
+.sectionCta{
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding: 2rem;
+  background-color: $primaryColor;
+  
+  .sectionCtaContainer:nth-child(1) {
+    position: relative;
+
+    .ImageBg{ 
+      margin-top: 2rem;
+    }
+  }
+  .sectionCtaContainer:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    div:nth-child(1){
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+
+      > span{
+        color: $secundaryColor;
+        font-weight: bold;
+        margin-left: 1rem;
+      }
+    }
+    div:nth-child(2){
+      p{
+        color: $lightColor;
+      }
+    }
+    div.ctaButtomContainer{
+      display: flex;
+      align-items: center;
+      margin-top: 1rem;
+
+      .ctaButtom{
+        background-color: $secundaryColor;
+        padding: 1rem 3rem;
+        border-radius: 6px;
+
+        color: $primaryColor;
+        text-decoration: none;
+        font-weight: bold;
+
+        i{
+          margin-left: 1rem;
+        }
+
+        &:hover{
+          filter: brightness(0.9);
+        }
+      }
+    }
   }
 }
 
@@ -563,7 +650,8 @@
 
         .section_card{
           flex-direction: row;
-          gap: 3rem;
+          gap: 2rem;
+          flex-wrap: wrap;
   
           .section_cardContainer{
             flex: 1;
@@ -586,6 +674,46 @@
               }
             }
           }
+        }
+      }
+
+      // slider
+    &:nth-child(4){
+      padding: 6rem;
+
+      .sectionSliderTitle{
+        max-width: 50%;
+      }
+    }
+    }
+  }
+  
+  .sectionCta{
+    flex-direction: row;
+    padding: 0 6rem;
+    margin-top: 6rem;
+    gap: 1rem;
+
+    .sectionCtaContainer{
+      flex: 1;
+      padding: 15rem 0;
+    }
+    .sectionCtaContainer:nth-child(1){
+      
+      .ImageBg{
+        position: absolute;
+        bottom: -15%;
+        left: 0;
+        margin-top: 0;
+      }
+    }
+    .sectionCtaContainer:nth-child(2){
+      align-items: flex-start;
+      text-align: left;
+
+      div:nth-child(2){
+        p{
+          width: 90%;
         }
       }
     }
