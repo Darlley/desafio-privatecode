@@ -10,7 +10,7 @@ export default function Menu() {
   return (
     <Navbar bg="light" expand="lg">
       <Container>
-        <Navbar.Brand href="#home" className="d-flex align-items-center">
+        <Navbar.Brand href="/" className="d-flex align-items-center">
           <Image
             width={100}
             height={30}

@@ -16,6 +16,7 @@ import ilustration45 from '../public/illustrations/image45.png'
 import ilustration43 from '../public/illustrations/image43.png'
 import parceiros from '../public/parceiros.png'
 import phoneBg from '../public/illustrations/Phone.png'
+import logo from '../public/logo-1.svg';
 
 export default function Home() {
   return (
@@ -218,7 +219,6 @@ export default function Home() {
                   </Link>
                 </div>
               </div>
-
             </div>
 
             <div className={styles.section_cardContainer}>
@@ -245,8 +245,8 @@ export default function Home() {
                     3.000 exercícios com resolução em vídeo
                   </li>
                   <li>
-                    <i className="bi bi-check-lg"></i>
-                    4 apostilas com todo o conteúdo de Matemática
+                    <i className="bi bi-check-lg"></i>4 apostilas com todo o
+                    conteúdo de Matemática
                   </li>
                   <li>
                     <i className="bi bi-check-lg"></i>
@@ -275,7 +275,6 @@ export default function Home() {
                   </Link>
                 </div>
               </div>
-
             </div>
           </div>
         </section>
@@ -302,19 +301,102 @@ export default function Home() {
           </div>
           <div>
             <p>
-              Receva lemebretes no seu celular e tenha a facilidade de estudar a qualquer hora e de qualquer lugar. <strong>Baixe nosso app e confira.</strong>
+              Receva lemebretes no seu celular e tenha a facilidade de estudar a
+              qualquer hora e de qualquer lugar.{' '}
+              <strong>Baixe nosso app e confira.</strong>
             </p>
           </div>
           <div className={styles.ctaButtomContainer}>
-            <Link href="#"><a className={styles.ctaButtom}>
-              Conheça nosso aplicativo
-              <i className="bi bi-arrow-right"></i>
-            </a></Link>
+            <Link href="#">
+              <a className={styles.ctaButtom}>
+                Conheça nosso aplicativo
+                <i className="bi bi-arrow-right"></i>
+              </a>
+            </Link>
           </div>
         </div>
       </section>
 
-      <footer></footer>
+      <footer className={styles.footer}>
+        <div className={styles.footer_container}>
+
+          <div className={styles.footer_containerItem}>
+            <div className={styles.footerContainerLogo}>
+              <Link href="/"><a>
+                <Image src={logo} width={203} height={38} />
+              </a></Link>
+            </div>
+            <div className={styles.footerContainerStore}>
+              <Link href="#">
+                <a className={styles.footerContainerItem_buttomStore}>
+                  <div>
+                    <i className="bi bi-apple"></i>
+                  </div>
+                  <div>
+                    Disponível na <br /><strong>App Store</strong>
+                  </div>
+                </a>
+              </Link>
+              
+              <Link href="#">
+                <a className={styles.footerContainerItem_buttomStore}>
+                  <div>
+                    <i className="bi bi-google"></i>
+                  </div>
+                  <div>
+                    Disponível na <br /><strong>Google Play</strong>
+                  </div>
+                </a>
+              </Link>
+            </div>
+          </div>
+          <div className={styles.footer_containerItem}>
+            <ul className={styles.footerContainerItem_menu}>
+              <li className={styles.footerContainerItem_menuItem}>
+                Localização
+                <ul className={styles.footerContainerItem_submenu}>
+                  <li className={styles.footerContainerItem_submenuItem}>
+                    Av. Brg. Faria Lima, 1422
+                    <br />
+                    São Paulo - SP
+                  </li>
+                </ul>
+              </li>
+              <li className={styles.footerContainerItem_menuItem}>
+                Fale conosco
+                <ul className={styles.footerContainerItem_submenu}>
+                  <li className={styles.footerContainerItem_submenuItem}>
+                    (22) 4442-0126
+                    <br />
+                    info@digihouse.com
+                  </li>
+                </ul>
+              </li>
+              <li className={styles.footerContainerItem_menuItem}>
+                Politicas
+                <ul className={styles.footerContainerItem_submenu}>
+                  <li className={styles.footerContainerItem_submenuItem}>Direitos autorais</li>
+                  <li className={styles.footerContainerItem_submenuItem}>Termos de uso</li>
+                  <li className={styles.footerContainerItem_submenuItem}>Políticas de Prvacidade</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div className={styles.footer_container}>
+          <div>
+            <p>Copyright 2021. All Right Reserved</p>
+          </div>
+          <div className={styles.footerSocialIcons}>
+            <Link href="#"><a><i className="bi bi-facebook"></i></a></Link>
+            <Link href="#"><a><i className="bi bi-twitter"></i></a></Link>
+            <Link href="#"><a><i className="bi bi-instagram"></i></a></Link>
+          </div>
+        </div>
+
+      </footer>
     </>
   )
 }
