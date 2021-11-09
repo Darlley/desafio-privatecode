@@ -17,6 +17,7 @@ import ilustration43 from '../public/illustrations/image43.png'
 import parceiros from '../public/parceiros.png'
 import phoneBg from '../public/illustrations/Phone.png'
 import logo from '../public/logo-1.svg';
+import Slider from '../components/Slider'
 
 export default function Home() {
   return (
@@ -284,7 +285,8 @@ export default function Home() {
             <span>Depoimentos</span>
             <h2>Recomentado por quem é expert no assunto</h2>
           </div>
-          <div>slider</div>
+          
+          <Slider />
         </section>
       </main>
 

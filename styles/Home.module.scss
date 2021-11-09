@@ -421,12 +421,13 @@
 
     // slider
     &:nth-child(4){
-      padding: 2rem;
       flex-direction: column;
+      margin-bottom: 2rem;
 
       .sectionSliderTitle{
         max-width: 100%;
         margin-bottom: 2rem;
+        padding: 0 2rem;
 
         span {
           font-weight: bold;
@@ -527,7 +528,7 @@
           align-items: center;
           justify-content: center;
 
-          padding: .5rem 3rem;
+          padding: 1rem 3rem;
           font-size: 1rem;
           color: $primaryColor;
           border-radius: 6px;
@@ -768,10 +769,11 @@
 
       // slider
     &:nth-child(4){
-      padding: 6rem;
 
       .sectionSliderTitle{
         max-width: 50%;
+        padding: 3rem 6rem 0;
+
       }
     }
     }
@@ -820,6 +822,7 @@
           margin-bottom: 0;
 
           .footerContainerItem_buttomStore{
+            padding: .5rem 3rem;
   
             &:nth-child(2){
               margin: 0 0 0 1rem;
